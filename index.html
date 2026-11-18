@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task 2 - Git & GitHub Website</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #333;
+}
+
+header {
+    background: #172554;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.hero {
+    background: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+button {
+    background: #172554;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#about, #contact {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#about h2, #contact h2 {
+    color: #172554;
+    margin-bottom: 20px;
+}
+
+#contact {
+    background: #e2e8f0;
+}
+
+input, textarea {
+    display: block;
+    width: 80%;
+    max-width: 400px;
+    padding: 12px;
+    margin: 12px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+footer {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Website</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <h2>Welcome to My Website</h2>
+    <p>This is my first website using HTML, CSS and JavaScript.</p>
+    <button onclick="showMessage()">Click Me</button>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>We are learning web development using HTML, CSS and JavaScript.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: mywebsite@gmail.com</p>
+    <p>Phone: 03001234567</p>
+
+    <form onsubmit="sendMessage(event)">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 My Website. All Rights Reserved.</p>
+</footer>
+
+<script>
+function showMessage() {
+    alert("Welcome to My Website!");
+}
+
+function sendMessage(event) {
+    event.preventDefault();
+    alert("Your message has been submitted!");
+}
+</script>
+</body>
+</html>
+
+
+</body>
+</html>
